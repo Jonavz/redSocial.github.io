@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="CSS/estilito.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+  <div class="container login-container shadow p-3 mt-5 mb-5 bg-body rounded">
+    <h2 class="h1 fw-bold text-center mt-3 mb-5">Registro</h2>
+
+    <form id="registroForm" class="ms-4 me-4">
+
+      <div class="mb-3">
+        <label for="regUsername" class="form-label">Usuario *</label>
+        <input type="text" class="form-control" id="regUsername" placeholder="Nombre de usuario">
+      </div>
+
+      <div class="mb-3">
+        <label for="regPassword" class="form-label">Contraseña *</label>
+        <input type="password" class="form-control" id="regPassword" placeholder="Contraseña">
+      </div>
+
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirmar contraseña *</label>
+        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar contraseña">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico *</label>
+        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre *</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+
+      <div class="mb-3">
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos">
+      </div>
+
+      <div class="mb-3">
+        <label for="genero" class="form-label">Género *</label>
+        <select class="form-select" id="genero">
+          <option value="">[Seleccione]</option>
+          <option>Hombre</option>
+          <option>Mujer</option>
+          <option>No Aplica</option>
+          <option>Prefiero no decirlo</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="mb-3 d-none" id="otroGeneroContainer">
+        <label for="otroGenero" class="form-label">Especifique su género</label>
+        <input type="text" class="form-control" id="otroGenero">
+      </div>
+
+      <div class="mb-4">
+        <label for="fechaNacimiento" class="form-label">Fecha de nacimiento *</label>
+        <input type="date" class="form-control" id="fechaNacimiento">
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 mb-4">Registrarse</button>
+      <p class="text-center">¿Ya tienes cuenta? <a href="login.html" class="link-info">Inicia sesión</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
