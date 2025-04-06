@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="CSS/estilito.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+ 
+</head>
+<body>
+    <div class="container login-container shadow p-3 mt-5 mb-5 bg-body rounded">
+        <h2 class="h1 fw-bold text-center mt-3 mb-5">Iniciar sesion</h2>
+
+        <form id="loginForm" class="ms-4 me-4">
+            <div class="mb-4 mt-3">
+                <label for="username" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario">
+              </div> 
+            
+            <div class="mb-3 mt-3">
+                <label class="login-form" for="password">Contraseña</label>
+                <input type="password" id="password" class="form-control" placeholder="Contraseña..."><br>
+                </div>
+            <div class="row g-3 mb-4">
+                <div class="col form-check">
+                <input type="checkbox" class="form-check-input" id="recordar">
+                <label class="form-check-label" for="recordar">Recordar usuario</label>
+                </div>
+                <div class="col">
+                    <p><a href="contraseñaReset.html" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">¿Olvidaste tu contraseña? </a></p>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mb-4 " >Iniciar sesion</button>
+            <p class="text-center">¿No tiene cuenta? <a href="registro.html" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Registrese</a></p>
+        </form>
+    </div>
+</body>
+</html>

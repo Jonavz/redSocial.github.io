@@ -1,0 +1,18 @@
+body {
+    background-color: #edfbff; 
+    font-family:sans-serif;
+}
+
+.login-container {  
+    max-width: 500px;
+    
+}
+.card-text {
+    font-size: 0.95rem;
+  }
+  
+  .btn-like {
+    width: 100%;
+    font-weight: bold;
+  }
+  
